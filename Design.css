@@ -1,0 +1,78 @@
+html {
+    min-height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+:root {
+    --size: 50%;
+    --rotate_Clockwise: 0deg;
+    --top: 0px;
+    --bottom: 0px;
+    --left: 0px;
+    --right: 0px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center; /* For the Image I had to give this*/
+}
+
+img {
+    width: var(--size);
+    transform: rotate(var(--rotate_Clockwise));
+    margin-bottom: var(--top);
+    margin-top: var(--bottom);
+    margin-left: var(--right);
+    margin-right: var(--left);
+}
+
+.right_side {
+    background: blueviolet;
+}
+
+.left_side {
+    background: tomato;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-between;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.rotate_icon_Clockwise i {
+    font-size: 1rem;
+    transform: rotateY(180deg);
+}
+
+.rotate_icon_AntiClockwise i {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+input {
+    width: 70%;
+}

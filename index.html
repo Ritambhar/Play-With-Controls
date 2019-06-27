@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Vanilla JS 2</title>
+        <link rel="stylesheet" href="Design.css" />
+        <script src="https://kit.fontawesome.com/b4cdbd2aff.js"></script>
+    </head>
+    <body>
+        <div class="main left_side">
+            <div class="left_side_container">
+                <img src="https://static1.squarespace.com/static/560dbc25e4b0969564758eb5/t/571d3223c2ea511fcc0ba086/1461531182495/">
+            </div>
+        </div>
+        <div class="main right_side">
+            <div class="right_side_container">
+                <h1>Play with the Controls</h1>
+                <div class="controls">
+                    <div class="control size">
+                        <label for="size">Size :</label>
+                        <input name="size" type="range" value="50" min="50" max="100" data-percentage="%">
+                    </div>
+
+                    <div class="control rotateClockwise">
+                        <label for="rotate_Clockwise">Rotate : <span class="rotate_icon_Clockwise"><i class="fas fa-undo"></i></span></label>
+                        <input name="rotate_Clockwise" type="range" value="0" data-degree="deg" min="-180" max="180">
+                    </div>
+
+                    <div class="control left">
+                        <label for="left">Left :</label>
+                        <input name="left" type="range" value="0" data-margin="px" min="0" max="350">
+                    </div>
+
+                    <div class="control right">
+                        <label for="right">Right :</label>
+                        <input name="right" type="range" value="0" data-margin="px" min="0" max="350">
+                    </div>
+
+                    <div class="control top">
+                        <label for="top">Top :</label>
+                        <input name="top" type="range" value="0" data-margin="px" min="0" max="450">
+                    </div>
+
+                    <div class="control bottom">
+                        <label for="bottom">Bottom :</label>
+                        <input name="bottom" type="range" value="0" data-margin="px" min="0" max="450">
+                    </div>
+                </div>
+            </div>
+        </div>     
+        <script src="soul.js"></script>
+    </body>
+</html>
